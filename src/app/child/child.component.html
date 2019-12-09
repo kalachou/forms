@@ -1,0 +1,7 @@
+<p>child works!</p>
+<!--<input type="text" [formControl]="favoriteColorControl">
+<input type="text" [(ngModel)]="favoriteColor">
+<p>{{favoriteColor}}</p>-->
+
+<input [ngModel]="userName" (ngModelChange)="onNameChange($event)" />
+<input type="button" (click)="onSubmit()"/>
